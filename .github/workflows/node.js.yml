@@ -26,7 +26,5 @@ jobs:
       - run: yarn build
       
       - name: Deploy
-        uses: avinal/github-pages-deploy-action@v0.9
-        with:
-          DOCS_FOLDER: dist
+        uses: rdarida/simple-github-pages-deploy-action@v1
       
