@@ -32,9 +32,8 @@ Users should be able to:
 
 ### Links
 
-In development
-<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Solution URL: [github.com/patryk1303/frontendmentor-order-summary-component-main](https://github.com/patryk1303/frontendmentor-order-summary-component-main)
+- Live Site URL: [patryk1303.github.io/frontendmentor-order-summary-component-main](https://patryk1303.github.io/frontendmentor-order-summary-component-main)
 
 ## My process
 
@@ -51,7 +50,8 @@ In development
 
 ### What I learned
 
-I refreshed basic Parcel + SCSS + HTML flow
+- I refreshed basic Parcel + SCSS + HTML flow
+- Setup basic GitHub Action with deploy to Pages
 
 ### Continued development
 
