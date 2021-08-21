@@ -1,0 +1,79 @@
+.order-summary {
+  $padding: 1.5rem;
+  $paddingDesktop: $padding * 2;
+  $gap: 1.5rem;
+  $radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+
+  padding-bottom: $padding;
+  margin: 0 auto;
+
+  max-width: 327px;
+
+  background-color: $colorWhite;
+  border-radius: 1rem;
+
+  transition: padding ease-in 300ms;
+
+  @include desktopMin {
+    max-width: 450px;
+  }
+
+  &__billing-plan {
+    margin: 0 $padding;
+
+    @include desktopMin {
+      margin: 0 $paddingDesktop;
+    }
+  }
+
+  &__cta {
+    padding: 0 $padding;
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+
+    @include desktopMin {
+      padding: 0 $paddingDesktop;
+    }
+  }
+
+  &__description {
+    padding: 0 $padding * 1.5;
+
+    color: $colorNeutralDesaturatedBlue;
+    font-size: 0.75rem;
+    text-align: center;
+
+    @include desktopMin {
+      padding: 0 $paddingDesktop * 2;
+    }
+  }
+
+  &__figure {
+    display: flex;
+  }
+
+  &__image {
+    max-width: 100%;
+
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+  }
+
+  &__title {
+    padding: 0 $padding;
+
+    color: $colorNeutralDarkBlue;
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+
+    @include desktopMin {
+      padding: 0 $paddingDesktop;
+    }
+  }
+}

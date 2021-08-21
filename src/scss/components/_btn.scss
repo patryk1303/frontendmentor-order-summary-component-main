@@ -1,0 +1,35 @@
+.btn {
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+
+  background: $colorPrimaryBrightBlue;
+
+  color: $colorNeutralVeryPaleBlue;
+  font-weight: 700;
+
+  @extend .shadow;
+  @extend .shadow--xl;
+
+  &:hover,
+  &:focus-visible {
+    cursor: pointer;
+
+    background: $colorViolet;
+  }
+
+  &--text {
+    background: transparent;
+
+    color: $colorNeutralDesaturatedBlue;
+
+    box-shadow: none;
+
+    &:hover,
+    &:focus-visible {
+      background: transparent;
+
+      color: $colorNeutralDarkBlue;
+    }
+  }
+}

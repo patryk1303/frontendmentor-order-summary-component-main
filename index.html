@@ -5,33 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+  <link rel="stylesheet" href="./src/scss/main.scss">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Order summary card</title>
 </head>
 <body>
 
-  Order Summary
+  <main class="container">
+    <article class="order-summary shadow shadow--xl">
+      <figure class="order-summary__figure">
+        <img class="order-summary__image" src="./images/illustration-hero.svg" alt="">
+      </figure>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+      <h1 class="order-summary__title">
+        Order Summary
+      </h1>
 
-  Annual Plan
-  $59.99/year
+      <p class="order-summary__description">
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </p>
 
-  Change
+      <section class="order-summary__billing-plan billing-plan">
+        <figure class="billing-plan__icon">
+          <img src="./images/icon-music.svg" class="billing-plan__icon-image" alt="">
+        </figure>
+        <header class="billing-plan__title">Annual Plan</header>
+        <footer class="billing-plan__price">$59.99/year</footer>
+        <a class="billing-plan__change-link" href="#">Change</a>
+      </section>
 
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <section class="order-summary__cta">
+        <button class="order-summary__btn btn">
+          Proceed to Payment
+        </button>
+
+        <button class="order-summary__btn btn btn--text">
+          Cancel Order
+        </button>
+      </section>
+    </article>
+  </main>
+
+  <footer class="row attribution">
+    <section class="container">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
+      Coded by <a href="https://www.frontendmentor.io/profile/patryk1303">Patryk Wychowaniec</a>.
+    </section>
+  </footer>
 </body>
 </html>
